@@ -6,7 +6,7 @@ const tg = window.Telegram.WebApp
 
 function App() {
   
-  const [isCook, setCook] = useState(Cookies.get('test'))
+  const [isCook, setCook] = useState('')
 
   useEffect(() => {
     tg.ready()
@@ -18,6 +18,7 @@ function App() {
 
   const cookSm = () => {
     Cookies.set('test', 'works')
+    setCook(Cookies.get('test')!)
   }
 
   return (
