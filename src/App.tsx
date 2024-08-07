@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';;
 import './App.css';
 
 const tg = window.Telegram.WebApp
@@ -17,6 +16,7 @@ function App() {
   return (
     <div>
       Hello
+      <button onClick={onClose}>Close</button>
     </div>
   );
 }
